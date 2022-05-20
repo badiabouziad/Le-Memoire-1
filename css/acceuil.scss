@@ -1,0 +1,140 @@
+body {
+  background-image: linear-gradient(rgba(0, 82, 99, 0.6), rgba(0, 82, 99, 0.8)),
+    url("/images/acceuil\ image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// css de HEADER
+
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: #005263;
+  display: flex;
+  #container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    #logo {
+      cursor: pointer;
+      display: flex;
+
+      img {
+        align-self: center;
+        width: 100px;
+      }
+    }
+  }
+  #menu {
+    display: flex;
+    align-self: center;
+    #menu_links {
+      display: flex;
+      a {
+        font-size: 20px;
+        align-self: center;
+        padding: 30px;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: #21e87a;
+        transform: scale(1.2);
+      }
+    }
+    #id_button {
+      margin: 0;
+      button {
+        width: 150px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        background-color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+        a {
+          color: #005263;
+          font-size: 20px;
+          transition: 0.25s;
+        }
+        &:hover {
+          background-color: #005263;
+          border: 1px solid white;
+          border-radius: 20px;
+          
+        }
+        &:hover a {
+          font-size: 22px;
+          color: #fff;
+            
+        }
+      }
+      padding: 30px;
+    }
+  }
+}
+
+// fin de css header
+
+// css de main
+
+#main {
+  
+  animation: main_anim;
+  animation-duration: 3s;
+  margin-top: 60px;
+  #b_text {
+    text-align: center;
+    font-size: 80px;
+    color: #003944;
+    font-weight: 700;
+    a {
+      text-decoration: underline;
+      color: white;
+      text-decoration: underline;
+      transition: 0.5s;
+      &:hover {
+        color: #21e87a;
+        
+      }
+    }
+  }
+  #logo_white {
+    
+    margin-top: 50px;
+    display: flex;
+    img {
+      cursor: pointer;
+      margin: auto;
+      justify-self: center;
+      width: 200px;
+      transition: 0.5s;
+    }
+    img:hover {
+      transform: scale(1.2);
+      
+    }
+  }
+
+  #s_text {
+    
+    margin: auto;
+    background-color: #fff;
+    height: 280px;
+    width: 800px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 45px;
+    color: #003944;
+    font-weight: 600;
+  }
+}
+@keyframes main_anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
