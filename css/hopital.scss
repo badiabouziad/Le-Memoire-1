@@ -1,0 +1,590 @@
+body {
+  background-image: linear-gradient(rgba(0, 82, 99, 0.6), rgba(0, 82, 99, 0.8)),
+    url("/images/acceuil\ image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: poppins;
+}
+
+// css de HEADER
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #005263;
+  display: flex;
+  #container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    #logo {
+      margin: auto;
+      cursor: pointer;
+      display: flex;
+      img {
+        align-self: center;
+        width: 75px;
+      }
+    }
+  }
+}
+
+// fin de css header
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 95%;
+}
+
+// css de section COVID-19
+
+#covid_autres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 50px;
+}
+#covid-19 {
+  background-color: #005263;
+  width: 500px;
+  height: 220px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  overflow: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+
+  #cas_total {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #9dcee2;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    #nombre_cas {
+      color: rgb(253, 85, 85);
+      margin-left: 5px;
+    }
+  }
+
+  #hospitalises-19 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    input {
+      font-family: poppins;
+      background-color: #005263;
+      border: none;
+      font-size: 25px;
+      font-weight: 500;
+      width: 60px;
+      color: white;
+      height: 25px;
+      align-self: center;
+      text-align: center;
+      caret-color: #33ff00;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #005263;
+      outline: none;
+    }
+  }
+  #gueris-19 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    input {
+      font-family: poppins;
+      caret-color: #33ff00;
+      background-color: #005263;
+      border: none;
+      font-size: 25px;
+      font-weight: 500;
+      width: 60px;
+      color: rgb(6, 219, 6);
+      height: 25px;
+      align-self: center;
+      text-align: center;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #005263;
+      outline: none;
+    }
+  }
+  #decedes-19 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    input {
+      font-family: poppins;
+      caret-color: #33ff00;
+
+      background-color: #005263;
+      border: none;
+      font-size: 25px;
+      font-weight: 500;
+      width: 60px;
+      color: white;
+      height: 25px;
+      align-self: center;
+      text-align: center;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #005263;
+      outline: none;
+    }
+  }
+
+  #btn_covid {
+    margin-top: 10px;
+    transition: 0.3s;
+    display: none;
+    animation-name: btn_covid_animation;
+    animation-duration: 0.8s;
+    overflow: hidden;
+
+    button {
+      cursor: pointer;
+      transition: 0.3s;
+      background-color: white;
+      color: #00353f;
+      border: none;
+      font-weight: 600;
+      font-family: poppins;
+      border-radius: 10px;
+
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+    }
+    button:hover {
+      background-color: #005263;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+#covid-19:hover {
+  transform: scale(1.04);
+  height: 280px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+#covid-19:hover #btn_covid {
+  display: block;
+  @keyframes btn_covid_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+// end of css de section COVID-19
+
+//  css de section autres
+#autres {
+  margin-top: 80px;
+  width: 500px;
+  height: 220px;
+  background-color: #9dcee2;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+
+  #cas_total_autres {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: #005263;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  #hospitalises {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    input {
+      font-family: poppins;
+
+      background-color: #9dcee2;
+      border: none;
+      font-size: 25px;
+      font-weight: 600;
+      width: 60px;
+      color: #00353f;
+      height: 25px;
+      align-self: center;
+      text-align: center;
+      caret-color: #ff4800;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #9dcee2;
+      outline: none;
+      border-bottom: 2px solid #00353f;
+    }
+  }
+  #gueris {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    input {
+      font-family: poppins;
+      caret-color: #ff4800;
+      background-color: #9dcee2;
+      border: none;
+      font-size: 25px;
+      font-weight: 600;
+      width: 60px;
+      color: green;
+      height: 25px;
+      align-self: center;
+      text-align: center;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #9dcee2;
+      outline: none;
+      border-bottom: 2px solid #00353f;
+    }
+  }
+  #decedes {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    input {
+      font-family: poppins;
+      caret-color: #ff4800;
+      background-color: #9dcee2;
+      border: none;
+      font-size: 25px;
+      font-weight: 600;
+      width: 60px;
+      color: #00353f;
+      height: 25px;
+      align-self: center;
+      text-align: center;
+    }
+    input:focus {
+      border-bottom: 2px solid #9dcee2;
+      background-color: #9dcee2;
+      outline: none;
+      border-bottom: 2px solid #00353f;
+    }
+  }
+  #btn_autres {
+    margin-top: 10px;
+    transition: 0.3s;
+    display: none;
+    animation-name: btn_covid_animation;
+    animation-duration: 0.8s;
+    overflow: hidden;
+
+    button {
+      cursor: pointer;
+      transition: 0.3s;
+      background-color: #00353f;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-family: poppins;
+      border-radius: 10px;
+
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+    }
+    button:hover {
+      background-color: #9dcee2;
+      color: #00353f;
+      border: 1px solid #00353f;
+    }
+  }
+}
+#autres:hover {
+  height: 280px;
+  transform: scale(1.04);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+#autres:hover #btn_autres {
+  display: block;
+  @keyframes btn_covid_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+// end of css de section autres
+
+// css de ressources
+#ressources {
+  width: 550px;
+  height: 450px;
+  background-color: #005263;
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+  cursor: pointer;
+  h1 {
+    text-align: center;
+    font-size: 55px;
+    line-height: 20px;
+    color: #c3d8e1;
+  }
+
+  #res_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    margin-top: 50px;
+    #lits {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      color: white;
+      font-weight: 600;
+      font-size: 25px;
+      input {
+        background-color: #005263;
+        border: none;
+        outline: none;
+        color: white;
+        text-align: center;
+        font-family: poppins;
+        font-size: 25px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+        caret-color: #1eff00;
+        &:focus {
+          border-bottom: 2px solid #9dcee2;
+        }
+      }
+    }
+    #tention-mettre {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      color: white;
+      font-weight: 600;
+      font-size: 25px;
+      input {
+        background-color: #005263;
+        border: none;
+        outline: none;
+        color: white;
+        text-align: center;
+        font-family: poppins;
+        font-size: 25px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+        caret-color: #1eff00;
+        &:focus {
+          border-bottom: 2px solid #9dcee2;
+        }
+      }
+    }
+    #boites {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      color: white;
+      font-weight: 600;
+      font-size: 25px;
+      input {
+        background-color: #005263;
+        border: none;
+        outline: none;
+        color: white;
+        text-align: center;
+        font-family: poppins;
+        font-size: 25px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+        caret-color: #1eff00;
+        &:focus {
+          border-bottom: 2px solid #9dcee2;
+        }
+      }
+    }
+    #moniteur {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      color: white;
+      font-weight: 600;
+      font-size: 25px;
+      input {
+        background-color: #005263;
+        border: none;
+        outline: none;
+        color: white;
+        text-align: center;
+        font-family: poppins;
+        font-size: 25px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+        caret-color: #1eff00;
+        &:focus {
+          border-bottom: 2px solid #9dcee2;
+        }
+      }
+    }
+  }
+  #btn_res {
+    text-align: center;
+    margin-top: 30px;
+    transition: 0.3s;
+    display: none;
+    animation-name: btn_res_animation;
+    animation-duration: 0.8s;
+    overflow: hidden;
+
+    button {
+      cursor: pointer;
+      transition: 0.3s;
+      background-color: #00353f;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-family: poppins;
+      border-radius: 10px;
+
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+    }
+    button:hover {
+      background-color: #9dcee2;
+      color: #00353f;
+      border: 1px solid #00353f;
+    }
+  }
+}
+#ressources:hover {
+  transform: scale(1.04);
+  height: 480px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+#ressources:hover #btn_res {
+  display: block;
+  @keyframes btn_res_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+// fin de css de ressources
+// css de DEMANDE
+.demande {
+  width: 250px;
+  height: 180px;
+  background-color: #005263;
+  text-align: center;
+  border-radius: 30px;
+
+   transition: 0.3s;
+    cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  .text-demande {
+      margin-top: 55px;
+    h2 {
+      font-size: 40px;
+      color: #9dcee2;
+    }
+  }
+  .btns-demande {
+      overflow: hidden;
+       display: none;
+       transition: 00.3s;
+       
+    button {
+      width: 180px;
+      height: 50px;
+      background-color: #00353f;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-family: poppins;
+      border-radius: 10px;
+      transition: 0.3s;
+ animation-name: btn_demande_animation;
+    animation-duration: 0.8s;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #9dcee2;
+        color: #00353f;
+        border: 1px solid #00353f;
+      }
+    }
+  }
+}
+.demande:hover {
+  transform: scale(1.04);
+  height: 320px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+.demande:hover .btns-demande {
+  display: block;
+  @keyframes btn_demande_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+// fin de css de DEMANDE
