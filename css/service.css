@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(rgba(0, 82, 99, 0.6), rgba(0, 82, 99, 0.8)), url("/images/acceuil image.jpg");
   background-size: cover;
   background-attachment: fixed;
+  font-family: poppins;
 }
 
 #header {
@@ -38,6 +39,19 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   width: 75px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
 }
 
 #covid_autres {
@@ -111,6 +125,28 @@ body {
   font-weight: 500;
 }
 
+#covid-19 #hospitalises-19 input {
+  font-family: poppins;
+  background-color: #005263;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  width: 60px;
+  color: white;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  caret-color: #33ff00;
+}
+
+#covid-19 #hospitalises-19 input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #005263;
+  outline: none;
+}
+
 #covid-19 #gueris-19 {
   width: 90%;
   display: -webkit-box;
@@ -124,8 +160,26 @@ body {
   font-weight: 500;
 }
 
-#covid-19 #gueris-19 span {
-  color: #39f039;
+#covid-19 #gueris-19 input {
+  font-family: poppins;
+  caret-color: #33ff00;
+  background-color: #005263;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  width: 60px;
+  color: #06db06;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#covid-19 #gueris-19 input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #005263;
+  outline: none;
 }
 
 #covid-19 #decedes-19 {
@@ -139,6 +193,28 @@ body {
   color: white;
   font-size: 25px;
   font-weight: 500;
+}
+
+#covid-19 #decedes-19 input {
+  font-family: poppins;
+  caret-color: #33ff00;
+  background-color: #005263;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  width: 60px;
+  color: white;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#covid-19 #decedes-19 input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #005263;
+  outline: none;
 }
 
 #covid-19 #btn_covid {
@@ -252,7 +328,30 @@ body {
           justify-content: space-between;
   color: black;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+#autres #hospitalises input {
+  font-family: poppins;
+  background-color: #9dcee2;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  width: 60px;
+  color: #00353f;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  caret-color: #ff4800;
+}
+
+#autres #hospitalises input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #9dcee2;
+  outline: none;
+  border-bottom: 2px solid #00353f;
 }
 
 #autres #gueris {
@@ -265,11 +364,30 @@ body {
           justify-content: space-between;
   color: black;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-#autres #gueris span {
-  color: #008700;
+#autres #gueris input {
+  font-family: poppins;
+  caret-color: #ff4800;
+  background-color: #9dcee2;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  width: 60px;
+  color: green;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#autres #gueris input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #9dcee2;
+  outline: none;
+  border-bottom: 2px solid #00353f;
 }
 
 #autres #decedes {
@@ -282,7 +400,30 @@ body {
           justify-content: space-between;
   color: black;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+#autres #decedes input {
+  font-family: poppins;
+  caret-color: #ff4800;
+  background-color: #9dcee2;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  width: 60px;
+  color: #00353f;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#autres #decedes input:focus {
+  border-bottom: 2px solid #9dcee2;
+  background-color: #9dcee2;
+  outline: none;
+  border-bottom: 2px solid #00353f;
 }
 
 #autres #btn_autres {
@@ -331,6 +472,231 @@ body {
 }
 
 @keyframes btn_covid_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#ressources {
+  width: 550px;
+  height: 450px;
+  background-color: #005263;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#ressources h1 {
+  text-align: center;
+  font-size: 55px;
+  line-height: 20px;
+  color: #c3d8e1;
+}
+
+#ressources #res_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 260px;
+  margin-top: 50px;
+}
+
+#ressources #res_container #lits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#ressources #res_container #lits input {
+  background-color: #005263;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-family: poppins;
+  font-size: 25px;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  caret-color: #1eff00;
+}
+
+#ressources #res_container #lits input:focus {
+  border-bottom: 2px solid #9dcee2;
+}
+
+#ressources #res_container #tention-mettre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#ressources #res_container #tention-mettre input {
+  background-color: #005263;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-family: poppins;
+  font-size: 25px;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  caret-color: #1eff00;
+}
+
+#ressources #res_container #tention-mettre input:focus {
+  border-bottom: 2px solid #9dcee2;
+}
+
+#ressources #res_container #boites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#ressources #res_container #boites input {
+  background-color: #005263;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-family: poppins;
+  font-size: 25px;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  caret-color: #1eff00;
+}
+
+#ressources #res_container #boites input:focus {
+  border-bottom: 2px solid #9dcee2;
+}
+
+#ressources #res_container #moniteur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#ressources #res_container #moniteur input {
+  background-color: #005263;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-family: poppins;
+  font-size: 25px;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  caret-color: #1eff00;
+}
+
+#ressources #res_container #moniteur input:focus {
+  border-bottom: 2px solid #9dcee2;
+}
+
+#ressources #btn_res {
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: none;
+  -webkit-animation-name: btn_res_animation;
+          animation-name: btn_res_animation;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  overflow: hidden;
+}
+
+#ressources #btn_res button {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #00353f;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-family: poppins;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+#ressources #btn_res button:hover {
+  background-color: #9dcee2;
+  color: #00353f;
+  border: 1px solid #00353f;
+}
+
+#ressources:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  height: 480px;
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+#ressources:hover #btn_res {
+  display: block;
+}
+
+@-webkit-keyframes btn_res_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes btn_res_animation {
   from {
     opacity: 0;
   }

@@ -26,47 +26,92 @@
     </section>
     <!-- end of header section -->
     <!--  cas covid et cas autres -->
-    <section id="covid_autres">
-      <!--  section of covid-19 -->
+    <main>
+      <section id="covid_autres">
+        <!--  section of covid-19 -->
 
-      <div id="covid-19">
-        <div id="cas_total">
-          Cas covid-19 :<span id="nombre_cas">10228</span>
-        </div>
+        <div id="covid-19">
+          <div id="cas_total">
+            Cas covid-19 :<span id="nombre_cas">10228</span>
+          </div>
 
-        <div id="hospitalises-19">
-          hospitalisés :<span id="nombre_hospitalise">886</span>
-        </div>
+          <div id="hospitalises-19">
+            hospitalisés :
+            <input type="text" value="886" id="nombres-hospitalises" />
+          </div>
 
-        <div id="gueris-19">Gueris :<span id="nombre_gueris">6226</span></div>
+          <div id="gueris-19">
+            Gueris :<input type="text" value="1682" id="nombres-gueris" />
+          </div>
 
-        <div id="decedes-19">
-          Décédés :<span id="nombre_decedes">3116</span>
+          <div id="decedes-19">
+            Décédés :<input type="text" value="1244" id="nombres-decedes" />
+          </div>
+          <div id="btn_covid">
+            <button id="modifier-19">Enregistrer</button>
+          </div>
         </div>
-        <div id="btn_covid">
-          <button>Modifier</button>
-        </div>
-      </div>
-      <!-- end of section of covid-19 -->
+        <!-- end of section of covid-19 -->
 
-      <!-- section de autres -->
-      <div id="autres">
-        <div id="cas_total_autres">
-          Tous les Cas :<span id="nombre_cas">1522</span>
-        </div>
-        <div id="hospitalises">
-          hospitalisés : <span id="nombre_hospitalise">1105</span>
-        </div>
+        <!-- section de autres -->
+        <div id="autres">
+          <div id="cas_total_autres">
+            Tous les Cas :<span id="nombre_cas">1522</span>
+          </div>
+          <div id="hospitalises">
+            hospitalisés :<input
+              type="text"
+              value="1244"
+              id="nombres-hospitalises-autres"
+            />
+          </div>
 
-        <div id="gueris">Gueris : <span id="nombre_gueris">2250</span></div>
+          <div id="gueris">
+            Gueris :
+            <input type="text" value="1244" id="nombres-gueris-autres" />
+          </div>
 
-        <div id="decedes">Décédés : <span id="nombre_decedes">923</span></div>
-        <div id="btn_autres">
-          <button>Modifier</button>
+          <div id="decedes">
+            Décédés :
+            <input type="text" value="1244" id="nombres-decedes-autres" />
+          </div>
+          <div id="btn_autres">
+            <button id="modifier">Enregistrer</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- fin de section de autres -->
+      </section>
+      <!-- fin de section de autres -->
+      <!--  section des ressources -->
+      <section id="ressources">
+        <h1>Ressources</h1>
+
+        <div id="res_container">
+          <div id="lits">
+            Lits : <input type="text" value="559" id="nombres-lits" />
+          </div>
+          <!--  -->
+          <div id="tention-mettre">
+            Tention-Mettre : <input type="text" value="93" id="nombres-tention-mettre" />
+          </div>
+
+          <!--  -->
+          <div id="boites">
+            Boites Oxygene : <input type="text" value="1200" id="nombres-boites" />
+          </div>
+
+          <!--  -->
+          <div id="moniteur">
+            Moniteur cardiaque : <input type="text" value="322" id="nombres-moniteur" />
+          </div>
+        </div>
+         <div id="btn_res">
+            <button id="modifier">Enregistrer</button>
+          </div>
+      </section>
+    </main>
+
+    <!--  fin de section des ressources -->
+    <script src="/js/service.js"></script>
     <!-- fin de cas covid et cas autres -->
   </body>
 </html>

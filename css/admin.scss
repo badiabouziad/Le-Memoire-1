@@ -1,0 +1,340 @@
+body {
+  background: rgb(32, 132, 144);
+  background: radial-gradient(
+    circle,
+    rgba(32, 132, 144, 1) 0%,
+    rgba(172, 237, 245, 1) 100%
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: poppins;
+  margin: 0;
+}
+
+// css de HEADER
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #005263;
+  display: flex;
+  #container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    #logo {
+      margin: auto;
+      cursor: pointer;
+      display: flex;
+      img {
+        align-self: center;
+        width: 75px;
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  span {
+    transform: scale(2);
+    color: white;
+    margin-right: 20px;
+  }
+}
+
+// fin de css header
+
+// CSS LINE-1
+.line-1 {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+// css de COMPTES
+.comptes {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+  .title {
+    text-align: center;
+    h1 {
+      font-size: 55px;
+      color: white;
+      line-height: 40px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0;
+    transition: 0.8s;
+    button {
+      display: none;
+      width: 120px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      font-size: 18px;
+      font-family: poppins;
+      font-weight: 500;
+      background-color: #00353f;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005263;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+.comptes:hover {
+  height: 210px;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.comptes:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+.comptes:hover .btns {
+  opacity: 1;
+}
+// fin de css de COMPTES
+
+// css de ressources
+.ressources {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+  .title {
+    margin-left: 50px;
+    text-align: center;
+    h1 {
+      font-size: 55px;
+      color: white;
+      line-height: 40px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0;
+    transition: 0.8s;
+    button {
+      display: none;
+      width: 120px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      font-size: 18px;
+      font-family: poppins;
+      font-weight: 500;
+      background-color: #00353f;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005263;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+.ressources:hover {
+  transform: scale(1.1);
+  height: 210px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.ressources:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+.ressources:hover .btns {
+  opacity: 1;
+}
+// fin de css de ressources
+// fin de CSS LINE-1
+
+// CSS LINE-2
+.line-2 {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+// css de hopitaux
+.hopitaux {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+  .title {
+    text-align: center;
+    h1 {
+      font-size: 55px;
+      color: white;
+      line-height: 38px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0;
+    transition: 0.8s;
+    button {
+      display: none;
+      width: 120px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      font-size: 18px;
+      font-family: poppins;
+      font-weight: 500;
+      background-color: #00353f;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005263;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+.hopitaux:hover {
+  transform: scale(1.1);
+  height: 210px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.hopitaux:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+.hopitaux:hover .btns {
+  opacity: 1;
+}
+// fin de css de HOPITAUX
+
+// css de SERVICES
+.services {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+  .title {
+    text-align: center;
+    h1 {
+      font-size: 55px;
+      color: white;
+      line-height: 40px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.8s;
+    opacity: 0;
+    button {
+      display: none;
+      width: 120px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      font-size: 18px;
+      font-family: poppins;
+      font-weight: 500;
+      background-color: #00353f;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005263;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+.services:hover {
+  transform: scale(1.1);
+  height: 210px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.services:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+.services:hover .btns {
+  opacity: 1;
+}
+// fin de css de services
+// fin de CSS LINE-2

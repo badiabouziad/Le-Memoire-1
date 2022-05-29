@@ -1,0 +1,420 @@
+body {
+  background: #208490;
+  background: radial-gradient(circle, #208490 0%, #acedf5 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: poppins;
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #005263;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #container {
+  width: 1100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #container #logo {
+  margin: auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #container #logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 75px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.title span {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  color: white;
+  margin-right: 20px;
+}
+
+.line-1 {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.comptes {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.comptes .title {
+  text-align: center;
+}
+
+.comptes .title h1 {
+  font-size: 55px;
+  color: white;
+  line-height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.comptes .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: -20px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.comptes .btns button {
+  display: none;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  background-color: #00353f;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.comptes .btns button:hover {
+  background-color: #005263;
+  color: white;
+  border: 1px solid white;
+}
+
+.comptes:hover {
+  height: 210px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.comptes:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+
+.comptes:hover .btns {
+  opacity: 1;
+}
+
+.ressources {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ressources .title {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.ressources .title h1 {
+  font-size: 55px;
+  color: white;
+  line-height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.ressources .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: -20px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.ressources .btns button {
+  display: none;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  background-color: #00353f;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ressources .btns button:hover {
+  background-color: #005263;
+  color: white;
+  border: 1px solid white;
+}
+
+.ressources:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  height: 210px;
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.ressources:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+
+.ressources:hover .btns {
+  opacity: 1;
+}
+
+.line-2 {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.hopitaux {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hopitaux .title {
+  text-align: center;
+}
+
+.hopitaux .title h1 {
+  font-size: 55px;
+  color: white;
+  line-height: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.hopitaux .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: -15px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.hopitaux .btns button {
+  display: none;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  background-color: #00353f;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hopitaux .btns button:hover {
+  background-color: #005263;
+  color: white;
+  border: 1px solid white;
+}
+
+.hopitaux:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  height: 210px;
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.hopitaux:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+
+.hopitaux:hover .btns {
+  opacity: 1;
+}
+
+.services {
+  width: 450px;
+  height: 150px;
+  background-color: #005263;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .title {
+  text-align: center;
+}
+
+.services .title h1 {
+  font-size: 55px;
+  color: white;
+  line-height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.services .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: -15px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.services .btns button {
+  display: none;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  background-color: #00353f;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .btns button:hover {
+  background-color: #005263;
+  color: white;
+  border: 1px solid white;
+}
+
+.services:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  height: 210px;
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.services:hover button {
+  display: block;
+  background-color: white;
+  color: #00353f;
+}
+
+.services:hover .btns {
+  opacity: 1;
+}
+/*# sourceMappingURL=admin.css.map */
