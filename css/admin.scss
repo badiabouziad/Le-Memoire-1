@@ -81,9 +81,9 @@ body {
     }
   }
 
-  .btns {
+ .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
     margin-top: -20px;
     margin-right: auto;
@@ -91,37 +91,48 @@ body {
     opacity: 0;
     transition: 0.8s;
     button {
+      a {
+        font-weight: 800;
+        text-decoration: none;
+      }
+      width: 200px;
       display: none;
-      width: 120px;
       height: 60px;
       border-radius: 15px;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       font-family: poppins;
       font-weight: 500;
       background-color: #00353f;
       cursor: pointer;
-      color: white;
+      color: rgb(0, 173, 20);
       transition: 0.3s;
     }
     button:hover {
       background-color: #005263;
-      color: white;
+
+      color: rgb(0, 173, 20);
       border: 1px solid white;
+    }
+    button:hover a {
+      color: white;
     }
   }
 }
 .comptes:hover {
-  height: 210px;
   transform: scale(1.1);
+  height: 210px;
   box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
 .comptes:hover button {
   display: block;
   background-color: white;
-  color: #00353f;
 }
+.comptes:hover a {
+  color: rgb(0, 173, 20);
+}
+
 .comptes:hover .btns {
   opacity: 1;
 }
@@ -150,7 +161,7 @@ body {
 
   .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
     margin-top: -20px;
     margin-right: auto;
@@ -158,23 +169,31 @@ body {
     opacity: 0;
     transition: 0.8s;
     button {
+      a {
+        font-weight: 800;
+        text-decoration: none;
+      }
+      width: 200px;
       display: none;
-      width: 120px;
       height: 60px;
       border-radius: 15px;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       font-family: poppins;
       font-weight: 500;
       background-color: #00353f;
       cursor: pointer;
-      color: white;
+      color: rgb(0, 173, 20);
       transition: 0.3s;
     }
     button:hover {
       background-color: #005263;
-      color: white;
+
+      color: rgb(0, 173, 20);
       border: 1px solid white;
+    }
+    button:hover a {
+      color: white;
     }
   }
 }
@@ -187,8 +206,11 @@ body {
 .ressources:hover button {
   display: block;
   background-color: white;
-  color: #00353f;
 }
+.ressources:hover a {
+  color: rgb(0, 173, 20);
+}
+
 .ressources:hover .btns {
   opacity: 1;
 }
@@ -228,31 +250,39 @@ body {
 
   .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-right: auto;
     margin-left: auto;
     opacity: 0;
     transition: 0.8s;
     button {
+      a {
+        font-weight: 800;
+        text-decoration: none;
+      }
+      width: 200px;
       display: none;
-      width: 120px;
       height: 60px;
       border-radius: 15px;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       font-family: poppins;
       font-weight: 500;
       background-color: #00353f;
       cursor: pointer;
-      color: white;
+      color: rgb(0, 173, 20);
       transition: 0.3s;
     }
     button:hover {
       background-color: #005263;
-      color: white;
+
+      color: rgb(0, 173, 20);
       border: 1px solid white;
+    }
+    button:hover a {
+      color: white;
     }
   }
 }
@@ -265,8 +295,11 @@ body {
 .hopitaux:hover button {
   display: block;
   background-color: white;
-  color: #00353f;
 }
+.hopitaux:hover a {
+  color: rgb(0, 173, 20);
+}
+
 .hopitaux:hover .btns {
   opacity: 1;
 }
@@ -292,33 +325,41 @@ body {
     }
   }
 
-  .btns {
+ .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-right: auto;
     margin-left: auto;
-    transition: 0.8s;
     opacity: 0;
+    transition: 0.8s;
     button {
+      a {
+        font-weight: 800;
+        text-decoration: none;
+      }
+      width: 200px;
       display: none;
-      width: 120px;
       height: 60px;
       border-radius: 15px;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       font-family: poppins;
       font-weight: 500;
       background-color: #00353f;
       cursor: pointer;
-      color: white;
+      color: rgb(0, 173, 20);
       transition: 0.3s;
     }
     button:hover {
       background-color: #005263;
-      color: white;
+
+      color: rgb(0, 173, 20);
       border: 1px solid white;
+    }
+    button:hover a {
+      color: white;
     }
   }
 }
@@ -331,8 +372,11 @@ body {
 .services:hover button {
   display: block;
   background-color: white;
-  color: #00353f;
 }
+.services:hover a {
+  color: rgb(0, 173, 20);
+}
+
 .services:hover .btns {
   opacity: 1;
 }

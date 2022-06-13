@@ -36,7 +36,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 // css de section COVID-19
@@ -46,7 +46,7 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 #covid-19 {
   background-color: #005263;
@@ -525,3 +525,72 @@ main {
 }
 
 // fin de css de ressources
+// css de DEMANDE
+.demande {
+  width: 250px;
+  height: 180px;
+  background-color: #005263;
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 50px;
+
+   transition: 0.3s;
+    cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  .text-demande {
+      margin-top: 55px;
+    h2 {
+      font-size: 40px;
+      color: #9dcee2;
+    }
+  }
+  .btns-demande {
+      overflow: hidden;
+       display: none;
+       transition: 00.3s;
+       
+    button {
+      width: 180px;
+      height: 50px;
+      background-color: #00353f;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-family: poppins;
+      border-radius: 10px;
+      transition: 0.3s;
+ animation-name: btn_demande_animation;
+    animation-duration: 0.8s;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #9dcee2;
+        color: #00353f;
+        border: 1px solid #00353f;
+      }
+      &:hover a{
+       
+        color: #00353f;
+        
+      }
+    }
+  }
+}
+.demande:hover {
+  transform: scale(1.04);
+  height: 250px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+.demande:hover .btns-demande {
+  display: block;
+  @keyframes btn_demande_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+// fin de css de DEMANDE
+

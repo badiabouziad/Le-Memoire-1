@@ -51,7 +51,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 #covid_autres {
@@ -66,7 +66,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 #covid-19 {
@@ -704,4 +704,93 @@ main {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=service.css.map */
+
+.demande {
+  width: 250px;
+  height: 180px;
+  background-color: #005263;
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+}
+
+.demande .text-demande {
+  margin-top: 55px;
+}
+
+.demande .text-demande h2 {
+  font-size: 40px;
+  color: #9dcee2;
+}
+
+.demande .btns-demande {
+  overflow: hidden;
+  display: none;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
+}
+
+.demande .btns-demande button {
+  width: 180px;
+  height: 50px;
+  background-color: #00353f;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-family: poppins;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation-name: btn_demande_animation;
+          animation-name: btn_demande_animation;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.demande .btns-demande button:hover {
+  background-color: #9dcee2;
+  color: #00353f;
+  border: 1px solid #00353f;
+}
+
+.demande .btns-demande button:hover a {
+  color: #00353f;
+}
+
+.demande:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  height: 250px;
+  -webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+.demande:hover .btns-demande {
+  display: block;
+}
+
+@-webkit-keyframes btn_demande_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes btn_demande_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=gest-service.css.map */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/comptes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Comptes</title>
+  </head>
+  <body>
+    <!-- header section -->
+
+    <section id="header">
+      <div id="container">
+        <div id="logo">
+          <img src="images/logo (1).png" alt="logo" />
+        </div>
+      </div>
+    </section>
+    <!-- end of header section -->
+
+    <section class="ressource">
+      <table class="table">
+        <tr class="tr1">
+          <th>Pseudo</th>
+          <th>Email</th>
+          <th>Statue</th>
+          <th id="delete"></th>
+          <th id="delete"></th>
+        </tr>
+        <tr>
+          <td><input type="text" value="ahmed ziani" /></td>
+          <td><input type="text" value="ahmed@gmail.com" /></td>
+          <td>
+            <select name="cars" class="statue">
+            <option value="Inactif">Actif</option>
+              <option value="Actif">Inactif</option>
+            </select>
+          </td>
+          <td><button class="sauvgarder">Sauvgarder</button></td>
+          <td>
+            <button onclick="confirm('supprimer compte ?')">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" value="oussama aissa" /></td>
+          <td><input type="text" value="aissa@gmail.com" /></td>
+          <td>
+            <select name="cars"  class="statue">
+              <option value="Inactif">Actif</option>
+              <option value="Actif">Inactif</option>
+            </select>
+          </td>
+
+          <td><button class="sauvgarder">Sauvgarder</button></td>
+          <td>
+            <button onclick="confirm('supprimer compte ?')">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" value="aissam daoud" /></td>
+          <td><input type="text" value="aissam@gmail.com" /></td>
+          <td>
+            <select name="cars"  class="statue">
+             <option value="Inactif">Actif</option>
+              <option value="Actif">Inactif</option>
+            </select>
+          </td>
+
+          <td><button class="sauvgarder">Sauvgarder</button></td>
+          <td>
+            <button onclick="confirm('supprimer compte ?')">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" value="badia bouziad" /></td>
+          <td><input type="text" value="badia@gmail.com" /></td>
+          <td>
+            <select name="cars"  class="statue">
+              <option value="Inactif">Actif</option>
+              <option value="Actif">Inactif</option>
+            </select>
+          </td>
+
+          <td><button class="sauvgarder">Sauvgarder</button></td>
+          <td>
+            <button onclick="confirm('supprimer compte ?')">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" value="hadjer miss" /></td>
+          <td><input type="text" value="hadjer@gmail.com" /></td>
+          <td>
+            <select name="cars"  class="statue">
+              <option value="Inactif">Actif</option>
+              <option value="Actif">Inactif</option>
+            </select>
+          </td>
+
+          <td><button class="sauvgarder">Sauvgarder</button></td>
+          <td>
+            <button onclick="confirm('supprimer compte ?')">Supprimer</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="ajout-compte">
+      <div class="donnes">
+        <label for="pseudo">Pseudo :</label>
+        <br />
+        <input type="email" name="pseudo" id="" />
+        <label for="email">email :</label>
+        <br />
+        <input type="text" name="email" id="" />
+        <label for="role">Role :</label>
+         <select name="role"  id="role">
+              <option value="Inactif">Admin</option>
+              <option value="Actif">Gest.services</option>
+              <option value="Actif">Gest.hopitaux</option>
+              <option value="Actif">Superviseur</option>
+            </select>
+      </div>
+
+      <div class="button">
+        <button id="ajouter">Ajouter nouveau compte</button>
+      </div>
+    </section>
+  </body>
+</html>

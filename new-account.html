@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/new-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Create Account</title>
+</head>
+<body>
+     <!-- header section -->
+
+    <section id="header">
+      <div id="container">
+        <div id="logo">
+          <img src="images/logo (1).png" alt="logo" />
+        </div>
+      </div>
+    </section>
+    <!-- end of header section -->
+
+    <!-- login form sectio -->
+    <section id="login">
+      <!-- left side -->
+      <div id="left">
+        <img src="/images/white logo.png" alt="" />
+      </div>
+      <!-- end of left side -->
+
+      <!-- right side -->
+      <div id="right">
+        <div id="text">
+          <h1>Registrer</h1>
+        </div>
+        <div id="blanks">
+          <form action="">
+            <!--  -->
+            <div id="username">
+              <label for="username">Pseudo : </label> <br>
+              <input type="text" name="username" id="username" autofocus/>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div id="email">
+              <label for="email">Email :</label> <br>
+              <input type="email" name="email" id="email" />
+            </div>
+            <!--  -->
+            <div id="password">
+                <label for="password">Mot de passe :</label> <br>
+                <input type="password" name="password" id="password" />
+            </div>
+            <!--  -->
+            <!--  -->
+            <div id="password-2">
+                <label for="password-2"> Confirmer le Mot de passe :</label> <br>
+                <input type="password" name="password-2" id="password-2" />
+            </div>
+            <!--  -->
+          </div>
+          <div class="radio-buttons">
+
+              <input type="radio" id="gest-h" name="job" value="gest-h">
+              <label for="gest-h">Gestionnaire d'hopital</label><br>
+              <input type="radio" id="gest-s" name="job" value="gest-s">
+              <label for="gest-s">Gestionnaire de services</label><br>
+              <input type="radio" id="admin" name="job" value="admin">
+              <label for="admin">Admin</label>
+              <input type="radio" id="Superviseur" name="job" value="Superviseur">
+              <label for="Superviseur">Superviseur</label>
+            </div>
+          <div id="button_login">
+            <button type="submit">Registre</button>
+          </div>
+        </form>
+      </div>
+      <!-- end of right side -->
+    </section>
+    <!-- end of login form sectio -->
+</body>
+</html>

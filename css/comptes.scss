@@ -1,0 +1,199 @@
+body {
+  background: rgb(32, 132, 144);
+
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: poppins;
+  margin: 0;
+}
+
+// css de HEADER
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #005263;
+  display: flex;
+  #container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    #logo {
+      margin: auto;
+      cursor: pointer;
+      display: flex;
+      img {
+        align-self: center;
+        width: 75px;
+      }
+    }
+  }
+}
+
+// fin de css header
+#role{
+    text-align: center;
+     width: 200px;
+  background-color: rgb(32, 132, 144);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  font-family: poppins;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  margin-left: -100px;
+  cursor: pointer;
+}
+
+.table {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 130px;
+    .statue{
+        cursor: pointer;
+      width: 150px;
+      background-color: rgb(32, 132, 144);
+      border: none;
+      outline: none;
+      font-size: 20px;
+      color: white;
+      font-family: poppins;
+      font-weight: 600;
+    }
+  #delete{
+  
+      width:180px ;
+}
+ input {
+      font-family: poppins;
+      font-size: 20px;
+      font-weight: 500;
+      background: none;
+      border: none;
+      outline: none;
+     border-bottom: 1px solid #005263;
+      
+      color: white;
+    }
+    .sauvgarder{
+         width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-family: poppins;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+          transform: scale(1.06);
+        color: black;
+        background-color: white;
+
+    }
+    }
+button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-family: poppins;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+          transform: scale(1.06);
+        color: red;
+        background-color: white;
+
+    }
+}
+  .tr1 {
+    th {
+      color: rgb(175, 255, 175);
+      margin: 0;
+      
+    }
+  }
+  tr {
+    color: white;
+  }
+}
+.button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+
+  #ajouter {
+    margin-top: 50px;
+    width: 270px;
+    height: 80px;
+    color: white;
+    background-color: #005263;
+    border: none;
+    border-radius: 20px;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.03);
+        color: #005263;
+        background-color: white;
+
+    }
+  }
+}
+.ajout-compte {
+  margin: auto;
+  width: 78%;
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 25px;
+
+  .donnes {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    input {
+      font-family: poppins;
+      font-size: 18px;
+      font-weight: 500;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid white;
+      margin-left: -250px;
+      color: white;
+    }
+    label {
+      color: rgb(125, 235, 138);
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
